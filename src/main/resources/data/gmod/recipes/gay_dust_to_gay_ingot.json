@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "gmod:gay_dust"
+  },
+  "result": "gmod:gay_ingot",
+  "experience": 24.0,
+  "cookingtime": 100
+}

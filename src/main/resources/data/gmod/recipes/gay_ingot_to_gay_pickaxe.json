@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "g": {
+      "item": "gmod:gay_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "gmod:gay_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "gmod:block/example_block_model" }
+  }
+}

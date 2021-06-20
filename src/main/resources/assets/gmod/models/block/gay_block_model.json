@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gmod:blocks/gay_block_texture"
+  }
+}

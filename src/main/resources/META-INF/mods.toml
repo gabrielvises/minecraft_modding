@@ -1,0 +1,42 @@
+modLoader="javafml"
+
+loaderVersion="[36,)"
+
+license="All rights reserved"
+
+[[mods]]
+
+modId="gmod"
+
+version="1.0"
+displayName="Gay Mod"
+
+# logoFile="gmod.png"
+
+credits="Agradecimento aos canais no youtube"
+
+authors="Gabriel vilar"
+
+description='''
+Mod para tutorial
+'''
+
+#[[dependencies.gmod]]
+#
+#    modId="forge"
+#
+#    mandatory=true
+#
+#    versionRange="[36,)"
+#
+#    ordering="NONE"
+#
+#    side="BOTH"
+#
+#[[dependencies.gmod]]
+#    modId="minecraft"
+#    mandatory=true
+#
+#    versionRange="[1.16.5,1.17)"
+#    ordering="NONE"
+#    side="BOTH"
