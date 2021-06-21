@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gmod:items/gay_sword_texture"
+    "layer0": "gmod:items/example_axe"
   }
 }

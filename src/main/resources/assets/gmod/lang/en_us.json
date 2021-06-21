@@ -10,5 +10,15 @@
   "tooltip.special_item.hold_shift": "Hold \u00A77Shift for More Information",
   "item.gmod.special_item": "Special Item",
   "item.gmod.fada_erotica": "Fada Erótica",
-  "itemGroup.gmodtab": "Gay Mod"
+  "itemGroup.gmodtab": "Gay Mod",
+
+
+  "item.gmod.example_axe":  "Example Axe",
+
+  "item.gmod.example_shovel":  "Example Shovel",
+  "item.gmod.example_hoe": "Example Hoe",
+  "item.gmod.example_helmet":  "Example Helmet",
+  "item.gmod.example_chestplate": "Example Chestplate",
+  "item.gmod.example_leggings":  "Example Leggings",
+  "item.gmod.example_boots": "Example Boots"
 }
