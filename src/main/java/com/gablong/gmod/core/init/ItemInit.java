@@ -48,6 +48,9 @@ public class ItemInit {
     public static final RegistryObject<Item> EXAMPLE_HOE = ITEMS.register("example_hoe", () -> new HoeItem(CustomToolMaterial.EXAMPLE_TOOL, 5, -1,
             new Item.Properties().tab(TutorialMod.GMOD_GROUP)));
 
+    public static final RegistryObject<Item> EXAMPLE_PICKAXE = ITEMS.register("example_pickaxe", () -> new PickaxeItem(CustomToolMaterial.EXAMPLE_TOOL, 5, -1,
+            new Item.Properties().tab(TutorialMod.GMOD_GROUP)));
+
 
     public static final RegistryObject<Item> EXAMPLE_HELMET = ITEMS.register("example_helmet",
             () -> new ArmorItem(CustomArmorMaterial.EXAMPLE_ARMOR, EquipmentSlotType.HEAD, new Item.Properties().tab(TutorialMod.GMOD_GROUP)));

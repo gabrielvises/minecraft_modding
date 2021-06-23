@@ -16,9 +16,12 @@
   "item.gmod.example_axe":  "Example Axe",
 
   "item.gmod.example_shovel":  "Example Shovel",
+  "item.gmod.example_pickaxe":  "Example Pickaxe",
   "item.gmod.example_hoe": "Example Hoe",
   "item.gmod.example_helmet":  "Example Helmet",
   "item.gmod.example_chestplate": "Example Chestplate",
   "item.gmod.example_leggings":  "Example Leggings",
-  "item.gmod.example_boots": "Example Boots"
+  "item.gmod.example_boots": "Example Boots",
+
+  "entity.gmod.example": "Pabllo Vittar"
 }

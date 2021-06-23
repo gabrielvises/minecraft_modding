@@ -1,9 +1,12 @@
 package com.gablong.gmod;
 
+import com.gablong.gmod.common.entities.ExampleEntity;
 import com.gablong.gmod.core.init.BlockInit;
+import com.gablong.gmod.core.init.EntityTypesInit;
 import com.gablong.gmod.core.init.ItemInit;
 import com.gablong.gmod.core.init.TileEntityTypesInit;
 import com.gablong.gmod.world.OreGeneration;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -11,6 +14,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -31,6 +35,7 @@ public class TutorialMod
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
 
+        EntityTypesInit.ENTITY_TYPES.register(bus);
         ItemInit.ITEMS.register(bus);
         TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
         BlockInit.BLOCKS.register(bus);
@@ -41,6 +46,9 @@ public class TutorialMod
 
     private void setup(final FMLCommonSetupEvent event) {
 
+        DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(EntityTypesInit.EXAMPLE.get(), ExampleEntity.setAttributes().build());
+        });
     }
 
     public static class GmodGroup extends ItemGroup {

@@ -29,9 +29,9 @@ public class EventHandler {
         if(event.getState().getBlock() instanceof AnvilBlock) {
             EventHandler.setBlocks(world, pos);
         } else if (event.getPlayer().hasItemInSlot(EquipmentSlotType.HEAD) && world instanceof World) {
-            ArmorStandEntity armorStand = new ArmorStandEntity(EntityType.ARMOR_STAND, (World) world);
-            armorStand.setPos(pos.getX(), pos.getY(), pos.getZ());
-            world.addFreshEntity(armorStand);
+//            ArmorStandEntity armorStand = new ArmorStandEntity(EntityType.ARMOR_STAND, (World) world);
+//            armorStand.setPos(pos.getX(), pos.getY(), pos.getZ());
+//            world.addFreshEntity(armorStand);
         }
     }
 
