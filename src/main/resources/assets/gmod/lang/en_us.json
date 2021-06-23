@@ -23,5 +23,8 @@
   "item.gmod.example_leggings":  "Example Leggings",
   "item.gmod.example_boots": "Example Boots",
 
-  "entity.gmod.example": "Pabllo Vittar"
+  "entity.gmod.example": "Pabllo Vittar",
+
+  "key.category.gmod": "Gay Mod",
+  "key.gmod.example_key": "Example key"
 }

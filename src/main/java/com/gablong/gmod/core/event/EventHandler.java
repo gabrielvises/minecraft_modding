@@ -2,6 +2,7 @@ package com.gablong.gmod.core.event;
 
 import com.gablong.gmod.TutorialMod;
 import com.gablong.gmod.core.init.BlockInit;
+import com.gablong.gmod.core.init.KeybindsInit;
 import net.minecraft.block.AnvilBlock;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.item.ArmorStandEntity;
@@ -17,9 +18,10 @@ import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 
-@EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class EventHandler {
 
     @SubscribeEvent
@@ -45,6 +47,8 @@ public class EventHandler {
             }
         }
     }
+
+
 
     @SubscribeEvent
     public static void onRightClick(final PlayerInteractEvent.RightClickBlock event) {
