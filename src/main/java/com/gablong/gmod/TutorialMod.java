@@ -5,6 +5,7 @@ import com.gablong.gmod.core.init.BlockInit;
 import com.gablong.gmod.core.init.EntityTypesInit;
 import com.gablong.gmod.core.init.ItemInit;
 import com.gablong.gmod.core.init.TileEntityTypesInit;
+import com.gablong.gmod.core.network.TutorialNetwork;
 import com.gablong.gmod.world.OreGeneration;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
@@ -34,6 +35,7 @@ public class TutorialMod
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
+        bus.addListener(this::commomSetup);
 
         EntityTypesInit.ENTITY_TYPES.register(bus);
         ItemInit.ITEMS.register(bus);
@@ -49,6 +51,10 @@ public class TutorialMod
         DeferredWorkQueue.runLater(() -> {
             GlobalEntityTypeAttributes.put(EntityTypesInit.EXAMPLE.get(), ExampleEntity.setAttributes().build());
         });
+    }
+
+    public void commomSetup(final FMLCommonSetupEvent event) {
+        TutorialNetwork.init();
     }
 
     public static class GmodGroup extends ItemGroup {

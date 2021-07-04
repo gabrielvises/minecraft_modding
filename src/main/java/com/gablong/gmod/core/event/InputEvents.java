@@ -2,6 +2,8 @@ package com.gablong.gmod.core.event;
 
 import com.gablong.gmod.TutorialMod;
 import com.gablong.gmod.core.init.KeybindsInit;
+import com.gablong.gmod.core.network.TutorialNetwork;
+import com.gablong.gmod.core.network.message.InputMessage;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
@@ -27,7 +29,7 @@ public class InputEvents {
 
     private static void onInput(Minecraft mc, int key, int action) {
         if (mc.screen == null && KeybindsInit.exampleKey.isDown()) {
-            System.out.println("EXAMPLE KEY PRESSED");
+            TutorialNetwork.CHANNEL.sendToServer(new InputMessage(key));
         }
     }
 }
